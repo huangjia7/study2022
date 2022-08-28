@@ -10,6 +10,7 @@ public class Louzai1 {
     private Louzai2 louzai2;
 
     public void test1() {
+        System.out.println("Louzai1");
     }
 }
 

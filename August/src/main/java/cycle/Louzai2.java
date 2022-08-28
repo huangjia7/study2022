@@ -9,5 +9,6 @@ public class Louzai2 {
     private Louzai1 louzai1;
 
     public void test2() {
+        System.out.println("Louzai2");
     }
 }
