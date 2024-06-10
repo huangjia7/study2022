@@ -11,8 +11,16 @@
   <modules>
     <module>DesignPattern</module>
       <module>August</module>
-    <module>SpringSecurity</module>
+    <module>Spring</module>
   </modules>
+
+  <!-- 统一jar包版本-->
+  <properties>
+    <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+    <maven.compiler.source>1.8</maven.compiler.source>
+    <maven.compiler.target>1.8</maven.compiler.target>
+    <lombok.version>1.16.18</lombok.version>
+  </properties>
 
   <!-- 依赖声明 -->
   <dependencyManagement>
