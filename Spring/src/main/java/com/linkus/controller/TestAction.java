@@ -1,5 +1,6 @@
 package com.linkus.controller;
 
+import com.linkus.chain.ChainService;
 import com.linkus.strategy.way1.Strategy1;
 import com.linkus.strategy.way2.Strategy2;
 import com.linkus.strategy.way2.StrategyEnum;
@@ -15,17 +16,23 @@ public class TestAction {
     private Strategy1 strategy1;
     @Autowired
     private Strategy2 strategy2;
+    @Autowired
+    private ChainService chainService;
 
     @GetMapping("/test1/{input}")
     public String exec1(@PathVariable("input") String input){
         strategy1.exec(input);
         return "success";
     }
-
     @GetMapping("/test2")
     public String exec2(){
         strategy2.exec(StrategyEnum.ENTRY1,"hello ");
         strategy2.exec(StrategyEnum.ENTRY2,"world");
+        return "success";
+    }
+    @GetMapping("/test3")
+    public String exec3(){
+        chainService.exec("小芳");
         return "success";
     }
 }
