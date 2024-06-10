@@ -16,5 +16,6 @@ public class Client {
         System.out.println("----------------------------------------------");
         server.removeObserver(userSan);
         server.setInfomation("JAVA是世界上最好用的语言！");
+
     }
 }

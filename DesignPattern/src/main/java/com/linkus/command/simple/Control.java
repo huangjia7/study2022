@@ -14,6 +14,7 @@ public class Control {
         commands.add(command);
     }
 
+    
     public Control(List<Command> commands) {
         this.commands.addAll(commands);
     }
